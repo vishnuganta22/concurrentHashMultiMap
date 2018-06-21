@@ -68,6 +68,14 @@ public class ConcurrentMultiHashMap<K, V> {
         return values.contains(v);
     }
 
+    public boolean containsKey(K k){
+        return hashMap.containsKey(k);
+    }
+
+    public boolean isEmpty(){
+        return hashMap.isEmpty();
+    }
+
     public void clear() {
         hashMap.clear();
         values.clear();
